@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: "RobotoCondensedRegular", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background: url("img/neon-sign.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+
+.img-and-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.img-and-title img {
+  border-radius: 50%;
+  background-color: black;
+  margin-right: 10px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+}
