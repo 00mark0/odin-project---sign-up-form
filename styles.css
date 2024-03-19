@@ -49,22 +49,24 @@ footer {
   align-items: center;
   text-align: center;
   padding: 10px;
-  color: white;
-  background-color: rgb(0, 0, 0, 0.7);
+  color: #ffffff;
   gap: 5px;
+  background-color: rgb(0, 0, 0, 0.5);
 }
 
 footer a {
-  color: white;
+  color: #ffffff;
 }
 
 footer a:visited {
-  color: white;
+  color: #ffffff;
 }
 
 main {
   flex-shrink: 1;
   width: 70%;
+  background: linear-gradient(135deg, #20282a 60%, #e21e54 80%);
+  color: #ffffff;
 }
 
 .intro {
@@ -95,6 +97,7 @@ main {
   padding: 40px;
   box-shadow: 0 10px 8px -4px dimgray;
   border-radius: 10px;
+  color: #000000;
 }
 
 #form-section fieldset {
@@ -125,7 +128,7 @@ main {
 
 #form-section input:focus {
   outline: none;
-  border: 1px solid blue;
+  border: 1px solid #00d0ec;
 }
 
 .first-and-last-name {
@@ -143,6 +146,12 @@ main {
   gap: 100px;
 }
 
+.password p {
+  color: red;
+  padding: 5px;
+  display: none;
+}
+
 #submit-or-login {
   display: flex;
   flex-direction: column;
@@ -157,8 +166,8 @@ main {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #4caf50;
-  color: white;
+  background: linear-gradient(135deg, #00a9d6 60%, #7fdbe9 80%);
+  color: #ffffff;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -166,11 +175,11 @@ main {
 }
 
 #submit-or-login button:hover {
-  background-color: #45a049;
+  background-color: #0064f7;
 }
 
 #submit-or-login a {
-  color: #4caf50;
+  color: #00d0ec;
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
@@ -178,7 +187,7 @@ main {
 }
 
 #submit-or-login a:hover {
-  color: #45a049;
+  color: #0064f7;
 }
 
 @media (max-width: 600px) {
