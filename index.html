@@ -16,8 +16,8 @@
     <div class="sidebar">
       <header>
         <div class="img-and-title">
-          <img src="./img/icons8-gamer-64.png" alt="neon sign" />
-          <h1>Neon Gamer</h1>
+          <img src="./img/icons8-gamer-64.png" alt="neon sign" id="logo" />
+          <h1 id="title">Neon Gamer</h1>
         </div>
       </header>
       <footer>
@@ -33,12 +33,98 @@
             >Unsplash</a
           >
         </p>
+        <p>
+          <a target="_blank" href="https://icons8.com/icon/BNRTzQ2oXxZO/gamer"
+            >Gamer</a
+          >
+          icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </p>
       </footer>
     </div>
     <main>
-      <section></section>
-      <section></section>
-      <section></section>
+      <section class="intro" id="intro">
+        <h2 id="intro-title">Welcome to Neon Gamer</h2>
+        <p>
+          Step into the world of Neon Gamer, where gaming meets cool vibes and
+          endless excitement. Here, every click, every move, is an adventure
+          waiting to happen. Dive into a community buzzing with passion, where
+          the games are as electrifying as the neon lights that surround us. Get
+          ready to level up your gaming experience with us – because at Neon
+          Gamer, the fun never dims!
+        </p>
+        <p>This is not a real online service!</p>
+      </section>
+      <section class="form" id="form-section">
+        <h3>Let's do this!</h3>
+        <div class="form-container">
+          <form action="https://httpbin.org/post" method="post" id="form">
+            <fieldset>
+              <div class="first-and-last-name">
+                <label for="first-name" id="first-name-label">
+                  FIRST NAME
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                    placeholder="Thor"
+                  />
+                </label>
+                <label for="last-name" id="last-name-label">
+                  LAST NAME
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    required
+                    placeholder="Odinson"
+                  />
+                </label>
+              </div>
+              <div class="email-and-username">
+                <label for="email" id="email-label">
+                  EMAIL
+                  <input type="email" id="email" name="email" required />
+                </label>
+                <label for="username">
+                  USERNAME
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    required
+                    placeholder="ThorTheGod"
+                  />
+                </label>
+              </div>
+              <div class="password">
+                <label for="password" id="password-label">
+                  PASSWORD
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                </label>
+                <label for="confirm-password">
+                  CONFIRM PASSWORD
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirm-password"
+                    required
+                  />
+                </label>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+      <section id="submit-or-log-in">
+        <button type="submit" form="form" id="submit">Sign Up</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </section>
     </main>
   </body>
 </html>

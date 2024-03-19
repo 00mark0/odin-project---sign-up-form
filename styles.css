@@ -45,11 +45,14 @@ body {
 footer {
   display: flex;
   margin-top: auto;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 10px;
   color: white;
   background-color: rgb(0, 0, 0, 0.7);
+  gap: 5px;
 }
 
 footer a {
@@ -58,4 +61,59 @@ footer a {
 
 footer a:visited {
   color: white;
+}
+
+main {
+  flex-shrink: 1;
+  width: 70%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 50px;
+  gap: 20px;
+  text-align: start;
+  padding: 70px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+}
+
+#form-section {
+  width: 100%;
+}
+
+.form-container {
+  background-color: #d3d3d3;
+}
+
+#form-section label {
+  display: block;
+}
+
+#form-section input {
+  display: block;
+}
+
+.first-and-last-name {
+  display: flex;
+  justify-content: space-around;
+}
+
+.email-and-username {
+  display: flex;
+  justify-content: space-around;
+}
+
+.password {
+  display: flex;
+  justify-content: space-around;
 }
