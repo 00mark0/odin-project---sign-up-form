@@ -93,14 +93,40 @@ main {
 
 .form-container {
   background-color: #d3d3d3;
+  padding: 40px;
+  box-shadow: 0 10px 8px -4px dimgray;
+  border-radius: 10px;
+}
+
+#form-section fieldset {
+  border: none;
+}
+
+#form-section h3 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.5rem;
 }
 
 #form-section label {
   display: block;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  font-family: "RobotoCondensedRegular", sans-serif;
 }
 
 #form-section input {
   display: block;
+  padding: 10px 40px;
+  text-align: start;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+#form-section input:focus {
+  outline: none;
+  border: 1px solid blue;
 }
 
 .first-and-last-name {
@@ -116,4 +142,236 @@ main {
 .password {
   display: flex;
   justify-content: space-around;
+}
+
+#submit-or-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 30px;
+  margin-left: 20px;
+}
+
+#submit-or-login button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#submit-or-login button:hover {
+  background-color: #45a049;
+}
+
+#submit-or-login a {
+  color: #4caf50;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+#submit-or-login a:hover {
+  color: #45a049;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .img-and-title {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .img-and-title h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .intro {
+    padding: 20px;
+  }
+
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  #form-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .first-and-last-name,
+  .email-and-username,
+  .password {
+    flex-direction: column;
+  }
+
+  #submit-or-login {
+    align-items: center;
+    padding: 20px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .img-and-title {
+    margin-top: 50px;
+  }
+
+  .img-and-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro {
+    padding: 10px;
+  }
+
+  .intro h2 {
+    font-size: 1.2rem;
+  }
+
+  .intro p {
+    font-size: 0.9rem;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
+  #form-section h3 {
+    font-size: 1rem;
+  }
+
+  #submit-or-login {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 601px) {
+  body {
+    font-size: 16px;
+  }
+
+  .sidebar {
+    width: 30%;
+  }
+
+  .img-and-title {
+    flex-direction: row;
+    margin-top: 200px;
+  }
+
+  .img-and-title h1 {
+    font-size: 2.5rem;
+  }
+
+  main {
+    width: 70%;
+  }
+
+  .intro {
+    padding: 70px;
+  }
+
+  .intro h2 {
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 1.2rem;
+  }
+
+  .form-container {
+    padding: 40px;
+  }
+
+  #form-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .first-and-last-name,
+  .email-and-username,
+  .password {
+    flex-direction: row;
+  }
+
+  #submit-or-login {
+    align-items: flex-start;
+    padding: 30px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 520px) {
+  body {
+    font-size: 13px;
+  }
+
+  .img-and-title {
+    margin-top: 75px;
+  }
+
+  .img-and-title h1 {
+    font-size: 1.75rem;
+  }
+
+  .intro {
+    padding: 15px;
+  }
+
+  .intro h2 {
+    font-size: 1.35rem;
+  }
+
+  .intro p {
+    font-size: 0.95rem;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+
+  #form-section h3 {
+    font-size: 1.1rem;
+  }
+
+  #submit-or-login {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .first-and-last-name,
+  .email-and-username,
+  .password {
+    flex-direction: column;
+  }
 }
