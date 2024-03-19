@@ -32,7 +32,6 @@ body {
 
 .img-and-title img {
   border-radius: 50%;
-  background-color: black;
   margin-right: 10px;
 }
 
@@ -103,9 +102,9 @@ main {
 }
 
 #form-section h3 {
-  text-align: center;
-  margin: 20px 0;
+  text-align: start;
   font-size: 1.5rem;
+  padding: 20px 0 20px 70px;
 }
 
 #form-section label {
@@ -131,17 +130,17 @@ main {
 
 .first-and-last-name {
   display: flex;
-  justify-content: space-around;
+  gap: 100px;
 }
 
 .email-and-username {
   display: flex;
-  justify-content: space-around;
+  gap: 100px;
 }
 
 .password {
   display: flex;
-  justify-content: space-around;
+  gap: 100px;
 }
 
 #submit-or-login {
@@ -368,10 +367,11 @@ main {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .first-and-last-name,
   .email-and-username,
   .password {
     flex-direction: column;
+    gap: 0;
   }
 }
